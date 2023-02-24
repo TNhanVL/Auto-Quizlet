@@ -1,6 +1,7 @@
 document.getElementById('btnGetData').addEventListener('click', getData);
 document.getElementById('btnAuto').addEventListener('click', startAuto);
 document.getElementById('btnStop').addEventListener('click', stopAuto);
+chrome.storage.local.set({ stop: true });
 
 updateStatus();
 var table = $("#dict");
