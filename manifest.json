@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Quizlet",
+    "description": "Auto complete Quizlet",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "permissions": ["tabs", "storage"],
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js", "jquery-3.6.0.min.js"
+            ],
+            "matches": [
+                "https://quizlet.com/*"
+            ]
+        }
+    ]
+}
