@@ -20,9 +20,9 @@ async function gotMessage(message, sender, sendResponse) {
                 if (stop.stop) break;
 
                 //If in flashcard
-                var know = document.getElementsByClassName("o1rfl3bx");
+                var know = document.getElementsByClassName("ijrfqxy");
                 if (know.length) {
-                    know[1].click();
+                    know[1].children[0].click();
                     continue;
                 }
 
